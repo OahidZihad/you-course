@@ -1,22 +1,31 @@
-import logo from './logo.svg';
 import './App.css';
+import jsonData from '../src/Data/data.json'
+import { useEffect, useState } from 'react';
+import Course from './Components/Course/Course';
 
 function App() {
+  console.log(jsonData);
+  const first20 = jsonData.slice(0,20);
+  const [course, setCourse] = useState(first20);
+
+  useEffect(() => {
+    setCourse(course);
+  })
+
   return (
     <div className="App">
       <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
+        <div className="course">
+          {
+            course.map(courseInfo => 
+            <Course
+              name={courseInfo.name}
+              title={courseInfo.title}
+              price={courseInfo.price}
+              image={courseInfo.image}>
+            </Course>)
+          }
+        </div>
       </header>
     </div>
   );

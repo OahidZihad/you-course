@@ -1,0 +1,17 @@
+.main-course {
+  margin: 20px;
+  display: flex;
+  margin-left: -200px;
+}
+.img {
+  margin-top: 35px;
+}
+.course-info {
+  color: blueviolet;
+  margin-left: 10px;
+  border: 1px solid cyan;
+  border-radius: 10px;
+  background-color: lightpink;
+  width: 800px;
+  padding-bottom: 10px;
+}
