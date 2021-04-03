@@ -1,12 +1,13 @@
 .App {
+  display: flex;
   text-align: center;
 }
 .course {
-  /* width: 60%; */
+  width: 80%;
   border-right: 2px solid cyan;
 }
 
-.App-header {
+/* .App-header {
   background-color: #282c34;
   min-height: 100vh;
   display: flex;
@@ -15,4 +16,4 @@
   justify-content: center;
   font-size: calc(10px + 2vmin);
   color: white;
-}
+} */

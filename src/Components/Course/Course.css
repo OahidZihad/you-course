@@ -1,7 +1,7 @@
 .main-course {
   margin: 20px;
   display: flex;
-  margin-left: -200px;
+  /* margin-left: -200px; */
 }
 .img {
   margin-top: 35px;
@@ -12,6 +12,17 @@
   border: 1px solid cyan;
   border-radius: 10px;
   background-color: lightpink;
-  width: 800px;
+  padding: 10px;
+  width: 80%;
   padding-bottom: 10px;
+  font-weight: 400;
+}
+.main-button {
+  background-color: lightblue;
+  color: darkgreen;
+  width: 150px;
+  height: 30px;
+  border: 1px solid gray;
+  border-radius: 5px;
+  font-weight: 600;
 }
